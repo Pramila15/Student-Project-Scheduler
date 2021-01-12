@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.pramila.StudentProjectScheduler.NewTaskActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_task_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/taskBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/double_boxes"
+        android:layout_below="@+id/testing">
+
+        <GridLayout
+            android:columnCount="2"
+            android:rowCount="1"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!-- #Row 1 -->
+            <!-- ##Column 1 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardElevation="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:background="@color/taskLeft"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/task_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/left_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="upcoming"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- #Row 1 -->
+            <!-- ##Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                app:cardElevation="8dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="20dp"
+                    android:background="@color/taskRight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/overdue_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/overdue_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="overdue"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/double_boxes">
+
+        <ListView
+            android:id="@+id/task_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="44dp">
+
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/addTaskWrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_task_done1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Go to subjects"
+            android:textColor="@color/ctaButtons"
+            android:textSize="18sp"
+            tools:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

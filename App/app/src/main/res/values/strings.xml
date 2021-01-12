@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Student Project Scheduler</string>
+    <string name="add_subj_txt">Add a task</string>
+    <string name="study_ease_app_logo">Study Easy app logo</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="enter_subject">Please enter a class/subject:</string>
+    <string name="done">Done</string>
+    <string name="new_task">New Task</string>
+    <string name="task_name_input">Task Name:</string>
+    <string name="duedate_input">Due Date:</string>
+    <string name="choose_date">Choose date</string>
+    <string name="task_category" translatable="false">Choose a category:</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="change_date">Change Date</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="time_string">Time</string>
+    <string name="date_format">DD/MM/YYYY</string>
+    <string name="time_format">HH:MM</string>
+    <string name="select_time_new">Choose Time</string>
+    <string-array name="categories">
+        <item>Homework</item>
+        <item>Project</item>
+        <item>Demo</item>
+        <item>Test</item>
+    </string-array>
+</resources>

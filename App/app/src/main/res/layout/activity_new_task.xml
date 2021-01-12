@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pramila.StudentProjectScheduler.NewTaskActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_task_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/add_new_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/add_task_done"
+        android:layout_alignBottom="@+id/new_task_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/new_task"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/add_task_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_new_task"
+        android:layout_alignBottom="@+id/add_new_task"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/transparent"
+        android:text="@string/done"
+        android:textColor="@color/ctaButtons"
+        android:textSize="18sp"
+        tools:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/input_new_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_new_task"
+        android:layout_below="@+id/new_task_toolbar"
+        android:layout_marginTop="18dp"
+        android:text="@string/task_name_input"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/input_task"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input_new_task"
+        android:layout_below="@+id/input_new_task"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textColorLink="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/duedate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_new_task"
+        android:layout_below="@+id/input_task"
+        android:layout_marginTop="5dp"
+        android:text="@string/duedate_input"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/show_new_date"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/duedate_title"
+        android:layout_below="@+id/duedate_title"
+        android:focusable="false"
+        android:hint="@string/date_format"
+        android:inputType="none"/>
+
+    <Button
+        android:id="@+id/datepick_btn"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/add_task_done"
+        android:layout_below="@+id/duedate_title"
+        android:background="@color/colorPrimary"
+        android:text="@string/choose_date"
+        android:textColor="@android:color/background_light"
+        tools:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/duetime_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_new_task"
+        android:layout_below="@+id/show_new_date"
+        android:layout_marginTop="5dp"
+        android:text="@string/time_string"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/show_new_time"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/duedate_title"
+        android:layout_below="@+id/duetime_title"
+        android:focusable="false"
+        android:hint="@string/time_format"/>
+
+    <Button
+        android:id="@+id/timepick_btn"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/add_task_done"
+        android:layout_below="@+id/duetime_title"
+        android:background="@color/colorPrimary"
+        android:text="@string/select_time_new"
+        android:textColor="@android:color/background_light"
+        tools:textAllCaps="false" />
+
+</RelativeLayout>

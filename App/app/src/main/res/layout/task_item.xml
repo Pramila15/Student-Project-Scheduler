@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/task_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:paddingTop="15sp"
+        android:text="Task Desc"/>
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="15sp"
+        android:textStyle="bold"
+        android:text="Task Date"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pramila.StudentProjectScheduler.SubjectAddActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/subj_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="50dp" />
+
+    <TextView
+        android:id="@+id/add_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/subj_done"
+        android:layout_alignBottom="@+id/subj_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/add_subject"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/subj_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_subject"
+        android:layout_alignBottom="@+id/add_subject"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/transparent"
+        android:text="@string/done"
+        android:textColor="@color/ctaButtons"
+        android:textSize="18sp"
+        tools:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/input_subj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/add_subject"
+        android:layout_below="@+id/input_subj_title"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/input_subj_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input_subj"
+        android:layout_below="@+id/subj_toolbar"
+        android:layout_marginTop="34dp"
+        android:text="@string/enter_subject"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a5cd5"
+    android:visibility="visible"
+    tools:context="com.pramila.StudentProjectScheduler.SubjectListActivity">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/study_ease_app_logo"
+        app:srcCompat="@drawable/study_ease_logo" />
+
+    <Button
+        android:id="@+id/addSubjButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="226dp"
+        android:background="@android:drawable/ic_menu_add"
+        android:onClick="openAddSubject"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <TextView
+        android:id="@+id/addSubjTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addSubjButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-226dp"
+        android:text="@string/add_subj_txt"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addSubjButton"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <ListView
+            android:id="@+id/subj_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:divider="#2a5cd5"
+            android:dividerHeight="19dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
